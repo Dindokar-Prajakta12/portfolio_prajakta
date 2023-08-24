@@ -8,6 +8,43 @@
 	</title>
 </head>
 <body>
-<h1 align="center">hello world..</h1>
+<div>
+		<form>
+			<fieldset>
+				<legend> Registration Form..</legend><br><br>
+				<label>username<sup style="color:red;"> * </sup> : </label>
+				<input type="text" name="username" required maxlength="15" autofocus pattern= "[A-Z,a-z,0-9]{10,15}"> <br><br> 
+				<label>password<sup style="color:red;"> * </sup> : </label>
+				<input type="text" name=" password" required maxlength="15" autofocus pattern= "[A-Z,a-z,0-9]{10,15}"> <br><br> 
+				<label>Email : </label>
+				<input type="text" name=" email"> <br><br> 
+				<label>phone : </label>
+				<input type="text" name="phone" required maxlength="10" autofocus pattern= "[6-9]{1}[1-9]{9}"> <br><br> 
+				<label>DOB : </label>
+				<input type="date" name="date"> <br><br> 
+				<label> gender : </label>
+				<input type="radio" name="gender"> male 
+				<input type="radio" name="gender"> female
+				<input type="radio" name="gender"> other <br><br>
+                <label>university  dropdown<sup style="color:red;"> * </sup>:</label>
+				<select>
+					<option disabled selected> CHOOSE YOUR UNIVERSITY</option>
+					<option>SPPU</option>
+					<option>SGBAU</option>
+					<option>SATUU</option>
+					<option>OTHERS</option>
+				</select> <br><br>
+				<label>upload file : </label>
+				<input type="file" name="resume" multiple> <br><br> 
+				<input type="checkbox" name="tnc">i am agree <br><br>
+				<input type="submit" name="submit"> 
+				<input type="submit " name="cancel" value="cancel">
+				
+			</fieldset>
+		</form> 
+	</div><br><br>
+
 </body>
+
+
 </html>
